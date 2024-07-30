@@ -1,0 +1,138 @@
+header{
+    height: 60px;
+    border-bottom:1px solid var(--border-color);
+    position: relative;
+}
+
+.header-wrap{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
+    position: relative;
+
+    .top_left_wrap{
+        display: flex;
+        align-items: center;
+        gap: 55px;
+        
+        .state_switch{
+            display: flex;
+            gap: 12px;
+
+            li{
+                display: flex;
+
+                span{
+                    color: var(--font-black-basic);
+                    margin-right: 6px;
+                }
+            }
+            
+            input[type=checkbox] {
+                height: 0;
+                width: 0;
+                visibility: hidden; 
+                position: absolute;
+            }
+            input[type=checkbox]:checked+label{
+                background: #55BEC8;
+
+                &:after{
+                    left: calc(100% - 4px);
+                    transform: translateX(-100%);
+                }
+            }
+
+            label{
+                cursor: pointer;
+                text-indent: -9999px;
+                width: 28px;
+                height: 16px;
+                background: #DADFE7;
+                display: block;
+                border-radius: 100px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: 4px;
+                    width: 11px;
+                    height: 11px;
+                    background: #fff;
+                    border-radius: 100px;
+                    transition: 0.3s; 
+                }
+            }
+        } 
+         
+    
+        .profile{
+            display: flex;
+            align-items: center;
+
+            .profile_popup{
+                display: flex;
+                align-items: center;
+
+                .profile_photo{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 14px;
+                }
+
+                .counselor_state{
+                    color: #E2576D;
+                    margin: 0 10px 0 6px;
+                }
+            }
+        }
+
+        .alam_list{
+            display: flex;
+            gap: 22px;
+
+            .alam_wrap{
+                width: 20px;
+                height: 20px;
+                background: url('../../images/icon_alam.png') no-repeat 50%;
+                position: relative;
+
+                span{
+                    display: block;
+                    position: absolute;
+                    top:-2px;
+                    left: -2px;
+                    min-width: 12px;
+                    min-height: 12px;
+                    background: #FC4A4A;
+                    color: #fff;
+                    font-size: 10px; 
+                    line-height: 12px; 
+                    box-sizing: border-box;
+                    padding:0 3px;
+                    border-radius: 50%;
+                }
+            } 
+
+            .keypad_wrap{
+                width: 21px;
+                height: 22px;
+                background: url('../../images/icon_phone.png') no-repeat 50%;
+                cursor: pointer;
+            }
+
+            .logout_wrap{
+                display: block;
+                width: 16px;
+                height: 18px;
+                background: url('../../images/icon_logout.png') no-repeat 50%;}
+        }
+
+    }
+}
+
