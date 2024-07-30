@@ -9,7 +9,7 @@ const Header = () => {
         </div>
         <div class="top_left_wrap">
           <ul class="state_switch">
-            <li><span>콜대기</span> <input type="checkbox" id="switch1" /><label for="switch1"></label></li>
+            <li><span>콜대기1</span> <input type="checkbox" id="switch1" /><label for="switch1"></label></li>
             <li><span>채팅대기</span> <input type="checkbox" id="switch2" /><label for="switch2"></label></li>
             <li><span>이메일/게시판</span> <input type="checkbox" id="switch3" /><label for="switch3"></label></li>
           </ul>
