@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/callcenter/static/css/main.fc336d5a.css",
+    "main.js": "/callcenter/static/js/main.c5d83c52.js",
+    "static/js/453.2a82e7ac.chunk.js": "/callcenter/static/js/453.2a82e7ac.chunk.js",
+    "static/media/Pretendard-Black.woff": "/callcenter/static/media/Pretendard-Black.8bad248bdb96c3377cbc.woff",
+    "static/media/Pretendard-ExtraBold.woff": "/callcenter/static/media/Pretendard-ExtraBold.88651b953c5d967d1db9.woff",
+    "static/media/Pretendard-Bold.woff": "/callcenter/static/media/Pretendard-Bold.dd56301118da9e158ce9.woff",
+    "static/media/Pretendard-SemiBold.woff": "/callcenter/static/media/Pretendard-SemiBold.86ffe3f48b7881c55a2c.woff",
+    "static/media/Pretendard-Medium.woff": "/callcenter/static/media/Pretendard-Medium.f0cc544dcc84cf9f03b3.woff",
+    "static/media/Pretendard-Light.woff": "/callcenter/static/media/Pretendard-Light.d0646c81e7ffb919ebd1.woff",
+    "static/media/Pretendard-Regular.woff": "/callcenter/static/media/Pretendard-Regular.21b4bbcb93a4b1214f7d.woff",
+    "static/media/Pretendard-ExtraLight.woff": "/callcenter/static/media/Pretendard-ExtraLight.050334e61f5fd99dddd4.woff",
+    "static/media/Pretendard-Thin.woff": "/callcenter/static/media/Pretendard-Thin.d3e53f3d68cbe18c8f70.woff",
+    "index.html": "/callcenter/index.html",
+    "main.fc336d5a.css.map": "/callcenter/static/css/main.fc336d5a.css.map",
+    "main.c5d83c52.js.map": "/callcenter/static/js/main.c5d83c52.js.map",
+    "453.2a82e7ac.chunk.js.map": "/callcenter/static/js/453.2a82e7ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc336d5a.css",
+    "static/js/main.c5d83c52.js"
+  ]
+}
