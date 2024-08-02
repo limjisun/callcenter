@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/callcenter/static/css/main.fc336d5a.css",
-    "main.js": "/callcenter/static/js/main.c5d83c52.js",
+    "main.js": "/callcenter/static/js/main.819f8aa1.js",
     "static/js/453.2a82e7ac.chunk.js": "/callcenter/static/js/453.2a82e7ac.chunk.js",
     "static/media/Pretendard-Black.woff": "/callcenter/static/media/Pretendard-Black.8bad248bdb96c3377cbc.woff",
     "static/media/Pretendard-ExtraBold.woff": "/callcenter/static/media/Pretendard-ExtraBold.88651b953c5d967d1db9.woff",
@@ -14,11 +14,11 @@
     "static/media/Pretendard-Thin.woff": "/callcenter/static/media/Pretendard-Thin.d3e53f3d68cbe18c8f70.woff",
     "index.html": "/callcenter/index.html",
     "main.fc336d5a.css.map": "/callcenter/static/css/main.fc336d5a.css.map",
-    "main.c5d83c52.js.map": "/callcenter/static/js/main.c5d83c52.js.map",
+    "main.819f8aa1.js.map": "/callcenter/static/js/main.819f8aa1.js.map",
     "453.2a82e7ac.chunk.js.map": "/callcenter/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc336d5a.css",
-    "static/js/main.c5d83c52.js"
+    "static/js/main.819f8aa1.js"
   ]
 }
