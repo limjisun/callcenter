@@ -1,0 +1,91 @@
+nav{
+    min-width: 60px;
+    height: 100%;
+    background-color: var(--nav-primary-color);
+    position: relative;
+    z-index: 5;
+
+    .menu{
+        padding-top: 60px;
+
+        li{
+            margin-bottom: 6px;
+            position: relative;
+
+            &.menu_ticket {
+                background: url(#{$icon-url}ticket_off.png) no-repeat 50%;
+      
+                &:hover,
+                &.on {
+                  background: url(#{$icon-url}ticket_on.png) no-repeat 50%;
+                }
+              }
+      
+
+              &.menu_list {
+                background: url(#{$icon-url}list_off.png) no-repeat 50%;
+      
+                &:hover,
+                &.on {
+                  background: url(#{$icon-url}list_on.png) no-repeat 50%;
+                }
+              }
+      
+              &.menu_analyzer {
+                background: url(#{$icon-url}analyzer_off.png) no-repeat 50%;
+      
+                &:hover,
+                &.on {
+                  background: url(#{$icon-url}analyzer_on.png) no-repeat 50%;
+                }
+              }
+      
+              &.menu_admin {
+                background: url(#{$icon-url}admin_off.png) no-repeat 50%;
+      
+                &:hover,
+                &.on {
+                  background: url(#{$icon-url}admin_on.png) no-repeat 50%;
+                }
+              }
+      
+              &.menu_setting {
+                background: url(#{$icon-url}setting_off.png) no-repeat 50%;
+      
+                &:hover,
+                &.on {
+                  background: url(#{$icon-url}setting_on.png) no-repeat 50%;
+                }
+              }
+
+
+            a{
+                display: block;
+                height: 54px;
+                width: 60px;
+            }
+
+            .tooltip_menu{
+                display: inline-block;
+                position: absolute;
+                top: 17px;
+                padding: 0 4px;
+                height: 20px;
+                background-color: #fff;
+                border: 1px solid var(--nav-primary-color);
+                color: var(--nav-primary-color);
+                font-size: 11px;
+                font-weight: 500;
+                line-height: 20px;
+                white-space: nowrap;
+                transition: opacity 0.2s;
+                opacity: 0;
+                pointer-events: none;
+                z-index: 5;
+                border-radius: 2px;
+                margin-top: 0;
+                left: 50px;
+            }
+        }
+    }
+}

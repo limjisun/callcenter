@@ -22,14 +22,31 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react']
+            presets: [
+              '@babel/preset-react'
+            ]
           }
         }
-      }
-    ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'fonts/',
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'), // src 폴더를 @로 접근
+    }
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

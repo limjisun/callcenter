@@ -57,6 +57,12 @@ body {
     height: 100%;
     font-size: var(--font-main-size);
 }
+#root{
+  height: 100%;
+}
+.app{
+  height: 100%;
+}
 ol, ul {
 	list-style: none;
 }
@@ -133,3 +139,6 @@ select{
         outline: 0;
     }
 }
+
+
+$icon-url: '../../images/';

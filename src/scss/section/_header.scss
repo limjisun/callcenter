@@ -99,7 +99,7 @@ header{
             .alam_wrap{
                 width: 20px;
                 height: 20px;
-                background: url('../../images/icon_alam.png') no-repeat 50%;
+                background: url('#{$icon-url}icon_alam.png') no-repeat 50%;
                 position: relative;
 
                 span{
@@ -122,7 +122,7 @@ header{
             .keypad_wrap{
                 width: 21px;
                 height: 22px;
-                background: url('../../images/icon_phone.png') no-repeat 50%;
+                background: url('#{$icon-url}icon_phone.png') no-repeat 50%;
                 cursor: pointer;
             }
 
@@ -130,7 +130,7 @@ header{
                 display: block;
                 width: 16px;
                 height: 18px;
-                background: url('../../images/icon_logout.png') no-repeat 50%;}
+                background: url('#{$icon-url}icon_logout.png') no-repeat 50%;}
         }
 
     }

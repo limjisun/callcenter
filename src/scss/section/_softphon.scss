@@ -1,0 +1,292 @@
+.softphone_popup {
+    position: absolute;
+    border: 1px solid var(--font-black-basic);
+    padding: 20px 20px 15px 20px;
+    width: 300px;
+    height: 493px;
+    z-index: 50;
+    top: 60px;
+    right: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    //display: none;
+}
+
+.sp_grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: calc(100% - 80px);
+
+    .sp_state {
+        border-radius: 6px;
+        min-height: 80px;
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 20px;
+        flex-basis: 20%;
+
+        &.call_state{
+            background: #49CFAF;
+            color: #fff;
+            flex-basis: 20%;
+        }
+
+        &.hold_state{
+            background: #B5B5B5;
+            color: #fff;    
+        }
+    }
+
+    .call_btn {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-basis: 15%;
+
+        li{
+            flex: 1;
+        }
+    }
+    
+}
+
+$icon-width: 28px;
+$icon-height: 27px;
+
+
+@mixin icon-style($icon-name) {
+    width: $icon-width;
+    height: $icon-height;
+    display: block;
+    background: url(#{$icon-url}#{$icon-name}) no-repeat 50% 50%;
+}
+
+.call_btn {
+    display: flex;
+  
+    .icon {
+      @include icon-style('soft_ico_call.png'); // 기본 스타일
+  
+      &.call {
+        @include icon-style('soft_ico_call.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_call_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_call_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_call_dis.png');
+        }
+      }
+  
+      &.sp-ker {
+        @include icon-style('soft_ico_volume.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_volume_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_volume_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_volume_dis.png');
+        }
+      }
+  
+      &.callmute {
+        @include icon-style('soft_ico_mute.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_mute_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_mute_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_mute_dis.png');
+        }
+      }
+  
+      &.end {
+        @include icon-style('soft_ico_off.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_off_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_off_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_off_dis.png');
+        }
+      }
+  
+      &.hold {
+        @include icon-style('soft_ico_hold.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_hold_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_hold_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_hold_dis.png');
+        }
+      }
+  
+      &.consult {
+        @include icon-style('soft_ico_concul.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_concul_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_concul_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_concul_dis.png');
+        }
+      }
+  
+      &.transfer {
+        @include icon-style('soft_ico_change.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_change_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_change_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_change_dis.png');
+        }
+      }
+  
+      &.conference {
+        @include icon-style('soft_ico_meeting.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_meeting_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_meeting_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_meeting_dis.png');
+        }
+      }
+  
+      &.call_transfer {
+        @include icon-style('soft_ico_transfer.png');
+  
+        &:hover {
+          @include icon-style('soft_ico_transfer_hov.png');
+        }
+  
+        &:active {
+          @include icon-style('soft_ico_transfer_act.png');
+        }
+  
+        &:disabled {
+          @include icon-style('soft_ico_transfer_dis.png');
+        }
+      }
+    }
+  }
+
+
+
+
+.number_area {
+    width: 100%;
+    position: relative;
+    flex-basis: 10%;
+
+    input {
+        height: 100%;
+        width: 100%;
+        min-height: 30px;
+        padding: 5px;
+    }
+    .icon_back {
+        width: 12px;
+        height: 12px;
+        background: url(#{$icon-url}input_del.png) no-repeat 50%;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+    }
+}
+
+.sp_kpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 14px;
+    margin: 15px 0;
+    flex-basis: 55%;
+
+    li {
+        width: 100%;
+
+        button {
+            width: 100%;
+            min-height: 30px;
+            border-radius: 3px;
+        }
+
+        &:hover,&:active{
+            background: var(--border-color);
+        }
+
+    }
+}
+
+
+.sp_btn_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+        flex: 1;
+        padding: 3px 12px;
+        color: #fff;
+        text-align: center;
+        min-height: 34px;
+        border-radius: 3px;
+
+        &.hangup_btn {
+            background: #E2576D;
+        }
+
+        &.make_btn {
+            background: #48C68A;
+        }
+
+    }
+}

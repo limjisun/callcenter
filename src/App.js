@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import { Routes, Route } from 'react-router-dom';
 /* components import */
 import Layout from './components/Layout';
 
@@ -13,9 +13,7 @@ function App() {
     }
   }, []);
   return (
-    <div className="App">
-      <Layout />
-    </div>
+    <Layout />
   );
 }
 
