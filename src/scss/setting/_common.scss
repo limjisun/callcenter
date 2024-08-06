@@ -33,3 +33,25 @@
         color: #FC4A4A;
     }
 }
+
+.customer_photo {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.txt_contents {
+    border: 1px solid var(--border-color);
+    height: 290px;
+    border-radius: 2px;
+    textarea {
+        border: none;
+        color: var(--font-black-sub2);
+        font-size: var(--font-sub1-size);
+    }
+}

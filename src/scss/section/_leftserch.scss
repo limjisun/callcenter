@@ -11,6 +11,13 @@
         justify-content: space-between;
         padding: 0 15px;
         align-items: center;
+
+        .search_area{
+            input{
+                width: 150px;
+            }
+        }
+        
     }
 
     .ct_content {
@@ -27,19 +34,18 @@
 
 }
 
+
 .search_area {
     position: relative;
 
     input {
-        width: 150px;
         height: 26px;
         border-color: var( --border-color);
         box-sizing: border-box;
         background-position: 95%;
         padding: 5px 26px 5px 12px;
-        background-color: #fff;
         color: var(--font-black-sub2);
-        background: url(#{$icon-url}input_sear.png) no-repeat 50%;
+        background: #fff url(#{$icon-url}input_sear.png) no-repeat 50%;
         background-position: 95%;
     }
 }

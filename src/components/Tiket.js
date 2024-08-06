@@ -9,6 +9,7 @@ const Tiket = () => {
   const [sortedCustomers, setSortedCustomers] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedCustomer, setSelectedCustomer] = useState(null);
   const [filterType, setFilterType] = useState('default');
   const [showSearchResult, setShowSearchResult] = useState(false);
   const [sortOrder, setSortOrder] = useState('최신순'); // 기본 정렬 순서
@@ -54,7 +55,9 @@ const Tiket = () => {
     const customerIndex = customers.findIndex(c => c.id === customerId);
 
     if (customerIndex !== -1) {
+      const selectedCustomer = sortedCustomers[index];
       setActiveIndex(prevIndex => (prevIndex === index ? null : index));
+      setSelectedCustomer(selectedCustomer);
       
       const updatedCustomers = [...customers];
       updatedCustomers[customerIndex] = { ...updatedCustomers[customerIndex], isRealTime: false };
@@ -156,7 +159,7 @@ const Tiket = () => {
       </div>
       <div></div>
     </section>
-    <History/>
+    <History selectedCustomer={selectedCustomer} />
     </>
   );
 };

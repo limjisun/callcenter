@@ -1,9 +1,18 @@
 
 
-const HistoryNone = () => {
+const HistoryNone = ({ message }) => {
     return (
              <>
-                <div className="history-wait">상담고객을 선택하시면<br/>해당 고객과의 상담티켓이 표시됩니다</div>
+                <div className="history-wait">
+                  <div>
+                      {message.split('\n').map((line, index) => (
+                      <span key={index}>
+                          {line}
+                          {index < message.split('\n').length - 1 && <br />}
+                      </span>
+                    ))}
+                  </div>
+                </div>
             </>
     );
   };
